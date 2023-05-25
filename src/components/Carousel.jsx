@@ -39,13 +39,15 @@ export default function Carousel() {
               {profit && '+'} {coin?.price_change_percentage_24h.toFixed(2)}%
             </p>
           </div>
-          <p className="text-center">{coin?.current_price.toLocaleString('en-US')}</p>
+          <p className="text-center">
+            {symbol} {parseInt(coin?.current_price.toLocaleString('en-US')).toFixed(2)}
+            </p>
         </div>
       </Link>
     )
   })
   return (
-    <div className="h-[50%] flex justify-center items-center w-[85%] mx-10 ">
+    <div className="h-[55%] flex justify-center items-center w-[85%] mx-10 bg-grey py-4 rounded-lg bg-opacity-30">
       <AliceCarousel 
         infinite 
         mouseTracking 
