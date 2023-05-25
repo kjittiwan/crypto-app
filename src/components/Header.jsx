@@ -17,7 +17,7 @@ export default function Header() {
   };
   
   return (
-    <header className='drop-shadow-xl fixed w-full z-30 py-4 flex items-center  justify-between px-8 lg:px-32'>
+    <header className='drop-shadow-xl bg-transparent absolute w-full z-30 py-4 flex items-center  justify-between px-8 lg:px-32'>
       <div className='flex'>
         <Link to={'/'} >
           <div className='w-[180px]'>

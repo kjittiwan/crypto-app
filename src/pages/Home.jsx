@@ -1,5 +1,5 @@
-import Banner from "../components/Banner";
-import CoinsTable from "../components/CoinsTable";
+import Banner from "../components/Banner/Banner";
+import CoinsTable from "../components/CoinsTable/CoinsTable";
 
 export default function Home() {
   

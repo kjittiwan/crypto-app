@@ -1,7 +1,7 @@
 import axios from "axios"
 import { useEffect, useState } from "react"
-import { TrendingCoins } from "../config/api"
-import { CryptoState } from "../contexts/Currency"
+import { TrendingCoins } from "../../config/api"
+import { CryptoState } from "../../contexts/Currency"
 import AliceCarousel from 'react-alice-carousel';
 import 'react-alice-carousel/lib/alice-carousel.css';
 import { Link } from "react-router-dom";
@@ -40,7 +40,7 @@ export default function Carousel() {
             </p>
           </div>
           <p className="text-center">
-            {symbol} {parseInt(coin?.current_price.toLocaleString('en-US')).toFixed(2)}
+            {symbol} {coin?.current_price.toLocaleString('en-US',{minimumFractionDigits: 2})}
             </p>
         </div>
       </Link>
