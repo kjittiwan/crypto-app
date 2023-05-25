@@ -10,9 +10,15 @@ export default {
         primary: '#080808',
         secondary: '#121319',
         grey: '#232531',
-        accent: '#5466fe',
-        
-      }
+        accent: '#5466fe', 
+        subtitle: '#aeb1bf',
+      },
+      screens: {
+        sm: '640px',
+        md: '768px',
+        lg: '1200px',
+        xl: '1440px',
+      },
     },
   },
   plugins: [],

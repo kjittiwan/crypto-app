@@ -1,5 +1,9 @@
+import Banner from "../components/Banner";
+
 export default function Home() {
   return (
-    <div>Home</div>
+    <section className="bg-primary w-screen h-screen">
+      <Banner />
+    </section>
   )
 }
