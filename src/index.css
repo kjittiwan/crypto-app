@@ -17,15 +17,6 @@ section {
 }
 .page-num, .page-num-active{
   @apply bg-transparent border border-gray-700 w-[2rem] h-[2rem] flex items-center justify-center rounded-full cursor-pointer hover:bg-gray-800
-  /* background-color: transparent;
-  border: 1px solid #232531;
-  width: 2rem;
-  height: 2rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 100%;
-  cursor: pointer; */
 }
 .page-num-active {
   @apply bg-transparent border border-gray-700 w-[2rem] h-[2rem] flex items-center justify-center rounded-full  bg-gray-800
