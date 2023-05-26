@@ -41,8 +41,9 @@ export default function Header() {
       {user?.email ? (
         <div className='flex gap-x-4'>
           <Link to={'/account'} className='flex'>
-            <button className='border border-grey  px-4 rounded-md hover:brightness-75' onClick={handleSignOut}>Sign Out</button>
+            <button className='border border-grey  px-4 rounded-md hover:brightness-75'>Account</button>    
           </Link>
+          <button className='border border-grey  px-4 rounded-md hover:brightness-75' onClick={handleSignOut}>Sign Out</button>
           <div className='relative cursor-pointer'>
             <div onClick={() => setIsOpen((prev) => !prev)} className={`${isOpen ? 'rounded-t-md ' : 'rounded-md'} flex bg-grey  w-[5rem] py-3 justify-start pl-3 items-center gap-x-2 uppercase hover:brightness-75` }>
               {currency}

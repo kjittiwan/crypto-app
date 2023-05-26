@@ -18,7 +18,7 @@ export default function Table(props) {
         {searchedCoins()
         .slice((page - 1) * 10, (page - 1) * 10 + 10)
         .map((coin) => {
-          return <CoinItem key={coin.id} coin={coin}/>
+          return <CoinItem key={coin.id} coin={coin} symbol={symbol}/>
         })}
 
 

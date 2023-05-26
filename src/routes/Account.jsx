@@ -1,4 +1,3 @@
-import { useState } from "react"
 import { useNavigate } from "react-router-dom";
 import SavedCoins from "../components/SavedCoins"
 import { UserAuth } from "../contexts/Auth"
@@ -16,9 +15,9 @@ export default function Account() {
     }
   }
   return (
-    <section className="bg-primary">
-      <div className='max-w-[1140px] mx-auto'>
-        <div className='flex justify-between items-center my-12 py-8 rounded-div'>
+    <section className="bg-secondary min-h-screen">
+      <div className='w-[50%] h-full mx-auto'>
+        <div className='flex justify-between items-center  rounded-div'>
           <div>
             <h1 className='text-2xl font-bold'>Account</h1>
             <div>
@@ -30,13 +29,13 @@ export default function Account() {
             </button>
           </div>
         </div>
-      <div className='flex justfiy-between items-center my-12 py-8 rounded-div'>
-        <div className='w-full min-h-[300px]'>
-          <h1 className='text-2xl font-bold py-4'>Watch List</h1>
-          <SavedCoins />
+        <div className='flex justfiy-between items-center rounded-div'>
+          <div className='w-full min-h-[300px]'>
+            <h1 className='text-2xl font-bold py-4'>Watch List</h1>
+            <SavedCoins />
+          </div>
         </div>
       </div>
-    </div>
     </section>
     
   )
