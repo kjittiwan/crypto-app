@@ -2,7 +2,7 @@ import Logo from '../images/logo.png'
 import { Link, useNavigate } from 'react-router-dom'
 import { useState } from 'react';
 import { RxTriangleDown, RxTriangleUp } from 'react-icons/rx'
-import { CryptoState } from '../contexts/Currency';
+import { CryptoState } from '../contexts/CryptoContext';
 import { UserAuth } from '../contexts/Auth';
 
 export default function Header() {

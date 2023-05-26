@@ -1,7 +1,7 @@
 import axios from "axios";
 import { useEffect, useState } from "react"
 import { CoinList } from "../../config/api";
-import { CryptoState } from "../../contexts/Currency";
+import { CryptoState } from "../../contexts/CryptoContext";
 import Pagination from "./Pagination";
 import Table from "./Table";
 

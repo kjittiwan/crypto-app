@@ -1,34 +1,11 @@
-import { useEffect, useState } from "react"
 import { Link } from "react-router-dom"
 import { AiOutlineClose } from 'react-icons/ai'
-import { doc, onSnapshot, updateDoc } from 'firebase/firestore'
-import { db } from "../firebase"
-import { UserAuth } from "../contexts/Auth"
-
+import { CryptoState } from "../contexts/CryptoContext"
 export default function SavedCoins() {
-  const [coins, setCoins] = useState([])
-  
-  const { user } = UserAuth();
-  useEffect(() => {
-    onSnapshot(doc(db, 'users', `${user?.email}`), (doc) => {
-      setCoins(doc.data()?.watchList);
-    });
-  }, [user?.email]);
-  const coinPath = doc(db, 'users', `${user?.email}`)
-  const deleteCoin = async (passedId) => {
-    try {
-      const result = coins.filter((coin) => coin.id !== passedId)
-      await updateDoc(coinPath, {
-        watchList: result
-      });
-    } catch (err) {
-      console.log(err.message);
-    }
-  }
-
+  const { coins, deleteCoin} = CryptoState()
   return (
     <div>
-      {coins.length === 0 ? (<p>
+      { Array.isArray(coins) && coins.length === 0 ? (<p>
         Please save a coin to add it to your watch list. <Link to='/'>Click here to search coins.</Link>
       </p>) : (
         <table className='w-full border-collapse bg-secondary text-left text-sm text-secondary flex flex-col'>
