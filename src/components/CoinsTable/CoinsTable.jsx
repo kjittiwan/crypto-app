@@ -33,7 +33,7 @@ export default function CoinsTable() {
           <input 
           type="text" 
           placeholder="Search a coin"
-          className="bg-grey pl-4 outline-none rounded-md py-2 text-lg border border-grey focus:bg-secondary w-full hover:bg-gray-500"
+          className="bg-grey pl-4 outline-none rounded-md py-2 text-lg border border-grey focus:bg-secondary w-full hover:brightness-75"
           onChange={(e) => setSearch(e.target.value)}
             />
         </form>
