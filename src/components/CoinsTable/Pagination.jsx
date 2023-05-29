@@ -19,16 +19,16 @@ export default function Pagination({ itemsPerPage, setPage}) {
     <>
       <ReactPaginate
         breakLabel="..."
-        nextLabel={<MdNavigateNext className='text-2xl'/>}
+        nextLabel={<MdNavigateNext className='text-lg md:text-2xl'/>}
         onPageChange={handlePageClick}
         pageRangeDisplayed={5}
         pageCount={10}
-        previousLabel={<MdNavigateBefore className='text-2xl'/>}
+        previousLabel={<MdNavigateBefore className='text-lg md:text-2xl'/>}
         renderOnZeroPageCount={null}
         containerClassName='pagination'
         pageClassName='page-num'
-        previousLinkClassName='page-num'
-        nextLinkClassName='page-num'
+        previousLinkClassName='page-nav'
+        nextLinkClassName='page-nav'
         activeLinkClassName='page-num-active'
       />
     </>

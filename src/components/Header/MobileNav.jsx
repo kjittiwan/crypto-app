@@ -37,7 +37,7 @@ export default function MobileNav() {
               <Link to={'/signin'} onClick={toggleMenu}>Sign In</Link>
             </li>
             <li className='hover:underline hover:underline-offset-4 active:translate-y-1'>
-              <Link to={'/signin'} onClick={toggleMenu}>Sign Up</Link>
+              <Link to={'/signup'} onClick={toggleMenu}>Sign Up</Link>
             </li>
           
           </ul>

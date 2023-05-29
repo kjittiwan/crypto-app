@@ -3,10 +3,10 @@ export default function CoinItem({ coin, symbol }) {
   let profit = coin?.price_change_percentage_24h >= 0;
   return (
     <Link to={`/coin/${coin.id}`}>
-      <tr className="hover:bg-grey hover:bg-opacity-50 grid grid-rows-1 grid-cols-4 px-4 text-xl font-semibold">
-        <th className="flex gap-5 py-4 font-normal items-center">
+      <tr className="hover:bg-grey hover:bg-opacity-50 grid grid-rows-1 grid-cols-4 px-4 text-base md:text-xl font-semibold ">
+        <th className="flex gap-3 md:gap-5 py-4 items-center">
             <div className="flex items-center gap-x-4">
-              <div className="relative min-h-[4rem] max-w-[4rem]">
+              <div className="relative min-h-[4rem] w-[4rem]">
                 <img
                   className="h-full w-full  object-cover object-center"
                   src={coin?.image}
@@ -14,10 +14,10 @@ export default function CoinItem({ coin, symbol }) {
                 />
               </div>
               <div className="">
-                <div className="font-semibold text-xl uppercase">
+                <div className="font-semibold md:text-xl uppercase">
                   {coin?.symbol} 
                 </div>
-                <div className="text-subtitle text-base">
+                <div className="text-subtitle text-sm md:text-base">
                   {coin?.name}
                 </div>
               </div>

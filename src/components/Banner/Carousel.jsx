@@ -35,8 +35,8 @@ export default function Carousel() {
     let profit = coin?.price_change_percentage_24h >= 0;
     return (
       <Link to={`/coin/${coin.id}`} key={coin.id} className='flex flex-col justify-center items-center'>
-        <img src={coin?.image} alt={coin.name} className='min-h-[100px] max-w-[100px] mb-4' />
-        <div className="font-semibold text-2xl">
+        <img src={coin?.image} alt={coin.name} className='min-h-[75px] max-w-[75px] md:min-h-[100px] md:max-w-[100px] mb-4' />
+        <div className="font-semibold text-lg md:text-2xl">
           <div className="flex flex-1 gap-x-3 mb-2">
             <p className='uppercase'>{coin?.symbol}</p>
             <p className={`${profit ? 'text-green-500' : 'text-red-500'}`}>

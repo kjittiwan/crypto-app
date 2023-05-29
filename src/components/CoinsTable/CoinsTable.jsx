@@ -26,8 +26,8 @@ export default function CoinsTable() {
     ))
   }
   return (
-    <div className="mt-[8rem] bg-secondary px-14 py-14 flex flex-col gap-y-14">
-      <div className="flex flex-col justify-between items-center section-1 gap-y-4 w-full">
+    <div className="mt-[8rem] bg-secondary px-4 md:px-14 py-14 flex flex-col gap-y-14 overflow-x-scroll">
+      <div className="flex flex-col justify-between items-center section-1 gap-y-4 w-full ">
         <h1 className="text-4xl font-bold">Market Update</h1>
         <form action="" className="w-[70%]">
           <input 
